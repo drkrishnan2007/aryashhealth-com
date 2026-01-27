@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | AI for Clinicians — Aryash Health</title>
+    <meta name="description" content="About AI for Clinicians - free AI education from Dr Krishnan Pasupathi, a practising NHS GP learning and building with AI.">
+    <meta name="theme-color" content="#5b21b6">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Vercel Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <style>
+        :root {
+            --charcoal: #1e1b4b;
+            --cream: #FAF8F5;
+            --amber: #f97316;
+            --primary: #5b21b6;
+            --primary-light: #7c3aed;
+            --text-light: #FAF8F5;
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--charcoal);
+            background: var(--cream);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(30, 27, 75, 0.1);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-link:hover {
+            color: var(--amber);
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+
+        h2 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--primary);
+        }
+
+        a:hover {
+            color: var(--amber);
+        }
+
+        .highlight {
+            color: var(--amber);
+            font-weight: 500;
+        }
+
+        .author-section {
+            background: rgba(91, 33, 182, 0.05);
+            border-left: 3px solid var(--primary);
+            padding: 1.25rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .author-section p {
+            margin-bottom: 0.5rem;
+        }
+
+        .author-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .disclaimer {
+            font-size: 0.9rem;
+            color: rgba(30, 27, 75, 0.7);
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(30, 27, 75, 0.1);
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(30, 27, 75, 0.1);
+            text-align: center;
+        }
+
+        footer a {
+            color: rgba(30, 27, 75, 0.6);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        footer a:hover {
+            color: var(--amber);
+        }
+
+        .footer-divider {
+            color: rgba(30, 27, 75, 0.3);
+            margin: 0 0.75rem;
+        }
+
+        /* Focus states */
+        a:focus {
+            outline: 3px solid var(--amber);
+            outline-offset: 2px;
+        }
+
+        a:focus:not(:focus-visible) {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <a href="/" class="back-link">← Back to AI for Clinicians</a>
+            <h1>About This Project</h1>
+        </header>
+
+        <p><span class="highlight">AI for Clinicians</span> is a free educational resource for doctors who want to understand, use, and build with artificial intelligence.</p>
+
+        <p>This isn't a course created by AI researchers or tech companies. It's a practising GP's journey — learning alongside you, sharing what works, what doesn't, and what's actually useful in clinical practice.</p>
+
+        <h2>Why I'm Making This</h2>
+        <p>AI is changing medicine. Most clinicians know they should understand it, but:</p>
+        <ul>
+            <li>Expensive courses and fellowships aren't accessible to everyone</li>
+            <li>Academic content often misses practical application</li>
+            <li>Tech-focused resources assume knowledge we don't have</li>
+        </ul>
+        <p>I wanted something different: <strong>free, practical, and made by a doctor who actually uses these tools</strong>.</p>
+
+        <h2>What You'll Find Here</h2>
+        <p>Bite-sized video episodes (5-10 minutes) covering:</p>
+        <ul>
+            <li>AI fundamentals — what it actually is, no jargon</li>
+            <li>Daily clinical use — documentation, communication, learning</li>
+            <li>Getting better results — prompting techniques that work</li>
+            <li>Beyond chat — automation, voice AI, custom tools</li>
+            <li>Building things — from idea to working prototype</li>
+        </ul>
+
+        <h2>The "Ask"</h2>
+        <p>This content is free, always. If it helps you, I only ask one thing: <span class="highlight">pass it on</span>. Share with a colleague. Teach someone what you learned. That's how we all get better.</p>
+
+        <div class="author-section">
+            <p><strong>Dr Krishnan Pasupathi</strong></p>
+            <p>MBBS MRCGP MBA</p>
+            <p>NHS GP Partner with 29 years in medicine</p>
+            <p>Member of MDU, registered with GMC</p>
+        </div>
+
+        <h2>For Patients</h2>
+        <p>Looking for health information? Visit <a href="https://aryash.health">aryash.health</a> for patient education resources including blood test explainers, heart health guides, and more.</p>
+
+        <p class="disclaimer">
+            <strong>Disclaimer:</strong> The content on this site is for educational purposes only. It represents my personal learning journey and opinions, not medical advice or official guidance. Always use your own clinical judgement.
+        </p>
+
+        <footer>
+            <a href="/">Home</a>
+            <span class="footer-divider">·</span>
+            <a href="/privacy.html">Privacy</a>
+            <span class="footer-divider">·</span>
+            <a href="mailto:feedback@aryashhealth.com">Feedback</a>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://aryash.health/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "aryash.co.uk"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://aryash.health/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "www.aryash.co.uk"
+        }
+      ]
+    }
+  ]
+}
