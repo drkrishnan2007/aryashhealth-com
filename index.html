@@ -14,6 +14,28 @@
     <meta property="og:url" content="https://aryashhealth.com">
     <meta property="og:site_name" content="Aryash Health">
 
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Aryash Health",
+        "url": "https://aryash.health",
+        "logo": "https://aryashhealth.com/images/dr-krishnan-320.jpg",
+        "description": "Patient education and AI education for clinicians from Dr Krishnan Pasupathi, NHS GP.",
+        "founder": {
+            "@type": "Person",
+            "name": "Dr Krishnan Pasupathi",
+            "jobTitle": "NHS GP Partner",
+            "description": "MBBS MRCGP MBA, NHS GP with 29 years in medicine"
+        },
+        "sameAs": [
+            "https://aryash.health",
+            "https://aryashhealth.com"
+        ]
+    }
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -498,7 +520,13 @@
         <!-- Hero Section -->
         <header class="hero">
             <div class="photo-container">
-                <img src="images/dr-krishnan.jpg" alt="Dr Krishnan Pasupathi" class="photo">
+                <img src="images/dr-krishnan-160.jpg"
+                     srcset="images/dr-krishnan-160.jpg 1x, images/dr-krishnan-320.jpg 2x"
+                     alt="Dr Krishnan Pasupathi"
+                     class="photo"
+                     width="160"
+                     height="160"
+                     loading="eager">
             </div>
             <div class="hero-text">
                 <p class="brand">Aryash Health</p>
