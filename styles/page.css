@@ -1,0 +1,160 @@
+/* Shared styles for content pages (about, privacy) */
+
+:root {
+    --charcoal: #1e1b4b;
+    --cream: #FAF8F5;
+    --amber: #f97316;
+    --primary: #5b21b6;
+    --primary-light: #7c3aed;
+    --text-light: #FAF8F5;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--charcoal);
+    background: var(--cream);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(30, 27, 75, 0.1);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.back-link:hover {
+    color: var(--amber);
+}
+
+h1 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--charcoal);
+}
+
+h2 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--amber);
+}
+
+.highlight {
+    color: var(--amber);
+    font-weight: 500;
+}
+
+/* Author callout box */
+.author-section {
+    background: rgba(91, 33, 182, 0.05);
+    border-left: 3px solid var(--primary);
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.author-section p {
+    margin-bottom: 0.5rem;
+}
+
+.author-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Disclaimer and metadata text */
+.disclaimer,
+.updated {
+    font-size: 0.9rem;
+    color: rgba(30, 27, 75, 0.7);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(30, 27, 75, 0.1);
+}
+
+.updated {
+    font-size: 0.85rem;
+    color: rgba(30, 27, 75, 0.6);
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(30, 27, 75, 0.1);
+    text-align: center;
+}
+
+footer a {
+    color: rgba(30, 27, 75, 0.6);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+footer a:hover {
+    color: var(--amber);
+}
+
+.footer-divider {
+    color: rgba(30, 27, 75, 0.55);
+    margin: 0 0.75rem;
+}
+
+/* Focus states for accessibility */
+a:focus {
+    outline: 3px solid var(--amber);
+    outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible) {
+    outline: none;
+}
