@@ -289,37 +289,9 @@
             margin-bottom: 1.5rem;
         }
 
-        .signup-form {
-            display: flex;
-            gap: 0.75rem;
-            max-width: 450px;
-            margin: 0 auto 1rem;
-        }
-
-        .signup-form input[type="email"] {
-            flex: 1;
-            padding: 0.875rem 1rem;
-            font-size: 1rem;
-            font-family: var(--font-body);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--cream);
-            transition: border-color var(--transition), background var(--transition);
-        }
-
-        .signup-form input[type="email"]::placeholder {
-            color: rgba(250, 248, 245, 0.4);
-        }
-
-        .signup-form input[type="email"]:focus {
-            outline: none;
-            border-color: var(--amber);
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .signup-form button {
-            padding: 0.875rem 1.5rem;
+        .signup-button {
+            display: inline-block;
+            padding: 0.875rem 2rem;
             font-size: 1rem;
             font-weight: 600;
             font-family: var(--font-body);
@@ -328,15 +300,16 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
+            text-decoration: none;
             transition: background var(--transition), transform var(--transition);
         }
 
-        .signup-form button:hover {
+        .signup-button:hover {
             background: var(--amber-light);
             transform: translateY(-1px);
         }
 
-        .signup-form button:focus {
+        .signup-button:focus {
             outline: 3px solid var(--amber);
             outline-offset: 2px;
         }
@@ -344,6 +317,7 @@
         .signup-disclaimer {
             font-size: 0.8rem;
             color: rgba(250, 248, 245, 0.5);
+            margin-top: 1rem;
         }
 
         /* Philosophy Section */
@@ -397,7 +371,7 @@
         }
 
         .footer-divider {
-            color: rgba(250, 248, 245, 0.3);
+            color: rgba(250, 248, 245, 0.55);
             margin: 0 0.75rem;
         }
 
@@ -418,7 +392,7 @@
 
         .footer-credentials {
             font-size: 0.8rem;
-            color: rgba(250, 248, 245, 0.4);
+            color: rgba(250, 248, 245, 0.65);
             margin-top: 1rem;
         }
 
@@ -594,10 +568,9 @@
         <section class="signup-section">
             <h2>Coming Soon</h2>
             <p>Get notified when episodes launch</p>
-            <form class="signup-form" action="#" method="post">
-                <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
-                <button type="submit">Subscribe</button>
-            </form>
+            <a href="mailto:feedback@aryashhealth.com?subject=AI%20for%20Clinicians%20-%20Notify%20Me&body=Hi%20Dr%20Krishnan%2C%0A%0APlease%20let%20me%20know%20when%20the%20AI%20for%20Clinicians%20course%20launches.%0A%0AThanks" class="signup-button">
+                Notify Me When It Launches
+            </a>
             <p class="signup-disclaimer">No spam. Just course updates.</p>
         </section>
 
@@ -610,7 +583,7 @@
         <!-- Footer -->
         <footer class="site-footer">
             <div>
-                <a href="https://aryash.health" class="footer-patient-link">
+                <a href="https://aryash.health" class="footer-patient-link" rel="noopener noreferrer">
                     For Patients: Visit aryash.health →
                 </a>
             </div>
